@@ -15,9 +15,9 @@ using namespace std;
  */
 void uvodniObrazovka()
 {
-    cout>>"Vítejte ve hře hádej-číslo">>endl;
-    cout>>"Vaším úkolem je uhodnout náhodné číslo od 1 do 1000">>endl;
-    cout>>"Program po vašem pokusu odpoví, zda je číslo větší, menší, nebo správné">>endl;
+    cout<<"Vítejte ve hře hádej-číslo"<<endl;
+    cout<<"Vaším úkolem je uhodnout náhodné číslo od 1 do 1000"<<endl;
+    cout<<"Program po vašem pokusu odpoví, zda je číslo větší, menší, nebo správné"<<endl;
 }
 //* Tým 2 ***************************************************************************
 /**
@@ -54,16 +54,7 @@ void napisOdpovedPocitace(int cisloCloveka, int cisloPocitace)
  */
 int vymysliNahodneCislo(int odkud, int kam)
 {
-     int cisloCloveka, cisloPocitace;
-    uvodniObrazovka();
-    cisloPocitace = vymysliNahodneCislo(1,1000);
-    do{
-        cisloCloveka=nactiCisloCloveka();
-        napisOdpovedPocitace(cisloCloveka, cisloPocitace);
-    }while(hraNekonci(cisloCloveka, cisloPocitace));
 
-    koncovaObrazovka();
-    return 0; 
 }
 //* Tým 5 ***************************************************************************
 /**
@@ -120,4 +111,3 @@ int main() {
     koncovaObrazovka();
     return 0;
 }
-//askdjhask djhas kdjahsk djahdk
