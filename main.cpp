@@ -6,7 +6,7 @@
 //
 
 #include <iostream>
-
+#include <random>
 using namespace std;
 //* Tým 1 ***************************************************************************
 /**
@@ -41,7 +41,16 @@ void napisOdpovedPocitace(int cisloCloveka, int cisloPocitace)
  */
 int vymysliNahodneCislo(int odkud, int kam)
 {
-    
+     int cisloCloveka, cisloPocitace;
+    uvodniObrazovka();
+    cisloPocitace = vymysliNahodneCislo(1,1000);
+    do{
+        cisloCloveka=nactiCisloCloveka();
+        napisOdpovedPocitace(cisloCloveka, cisloPocitace);
+    }while(hraNekonci(cisloCloveka, cisloPocitace));
+
+    koncovaObrazovka();
+    return 0; 
 }
 //* Tým 5 ***************************************************************************
 /**
