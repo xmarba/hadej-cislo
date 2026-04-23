@@ -25,7 +25,13 @@ void uvodniObrazovka()
  */
 void koncovaObrazovka()
 {
-    
+    int isitenter=0;
+    cout << "***********************************" << endl;
+    cout << "*                                 *" << endl;
+    cout << "*            Konec hry            *" << endl;
+    cout << "*                                 *" << endl;
+    cout << "***********************************" << endl;
+    cin >> isitenter;
 }
 //* Tým 3 ***************************************************************************
 /**
