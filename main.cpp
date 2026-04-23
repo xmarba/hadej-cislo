@@ -73,3 +73,4 @@ int main() {
     koncovaObrazovka();
     return 0;
 }
+//askdjhask djhas kdjahsk djahdk
