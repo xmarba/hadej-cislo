@@ -49,7 +49,32 @@ int vymysliNahodneCislo(int odkud, int kam)
  */
 int nactiCisloCloveka()
 {
-    
+    int result = 0;
+    bool ok = true;
+    do {
+        ok = true;
+        string input;
+        cout << "Zadej číslo: ";
+        cin >> input;
+        result = 0;
+        int i = 0;
+        for (char c : input) {
+            if (c >= '0' && c <= '9') {
+                result = 10 * result + c - '0';
+            }
+            else {
+                ok = false;
+                cout << "'" << input << "' není číslo!\n ";
+                for (int j = 0; j < i; ++j) {
+                    cout << ' ';
+                }
+                cout << "^\n";
+                break;
+            }
+            ++ i;
+        }
+    } while(!ok);
+    return result;
 }
 //* Tým 6 ***************************************************************************
 /**
