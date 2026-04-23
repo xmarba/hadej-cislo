@@ -33,7 +33,18 @@ void koncovaObrazovka()
   */
 void napisOdpovedPocitace(int cisloCloveka, int cisloPocitace)
 {
-    
+    if (cisloCloveka > cisloPocitace)
+    {
+        cout << "Moje cislo je mensi." << endl;
+    }
+    else if (cisloCloveka < cisloPocitace)
+    {
+        cout << "Moje cislo je vetsi." << endl;
+    }
+    else
+    {
+        cout << "Trefa!" << endl;
+    }
 }
 //* Tým 4 ***************************************************************************
 /**
